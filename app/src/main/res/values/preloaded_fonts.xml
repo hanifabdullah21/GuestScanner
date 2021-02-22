@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/lancelot</item>
+        <item>@font/lato</item>
+        <item>@font/parisienne</item>
+        <item>@font/rochester</item>
+        <item>@font/sacramento</item>
+        <item>@font/satisfy</item>
+    </array>
+</resources>

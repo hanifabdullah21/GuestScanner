@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".ui.invitation.InvitationActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/dash_toolbar"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/splash_iv_digimedia"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="-20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_digimedia"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintLeft_toRightOf="@id/splash_tv_digimedia"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/splash_tv_digimedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Develop By "
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/splash_iv_digimedia"
+                app:layout_constraintTop_toTopOf="@id/splash_iv_digimedia" />
+
+            <ImageView
+                android:id="@+id/dash_iv_back"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_log_out"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/inv_iv1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_line2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dash_toolbar" />
+
+        <TextView
+            android:id="@+id/inv_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/lancelot"
+            android:text="INVITATION"
+            android:textColor="@color/colorGold"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_iv1" />
+
+        <TextView
+            android:id="@+id/inv_tv_name_guest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lancelot"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_tv_title"
+            tools:text="To: Rizqi Mulyantara" />
+
+        <TextView
+            android:id="@+id/inv_tv_from_guest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lancelot"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/inv_tv_name_guest"
+            app:layout_constraintRight_toRightOf="@id/inv_tv_name_guest"
+            app:layout_constraintTop_toBottomOf="@id/inv_tv_name_guest"
+            tools:text="from: Semarang" />
+
+        <ImageView
+            android:id="@+id/inv_iv2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:rotation="180"
+            android:src="@drawable/img_line2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_tv_from_guest" />
+
+        <TextView
+            android:id="@+id/inv_tv_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/lancelot"
+            android:text="You're specially invited"
+            android:textColor="@color/colorGold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_iv2" />
+
+        <TextView
+            android:id="@+id/inv_tv_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lancelot"
+            android:text="The Wedding of"
+            android:textColor="@color/colorGold"
+            android:textSize="32sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_tv_text1" />
+
+        <ImageView
+            android:id="@+id/inv_iv_couple"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/img_brides_transparent"
+            app:layout_constraintDimensionRatio="3:4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_tv_text2"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/inv_guideline_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/inv_tv_name_man"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sacramento"
+            android:gravity="center"
+            android:textColor="@color/colorGold"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/inv_guideline_05"
+            app:layout_constraintTop_toBottomOf="@id/inv_iv_couple"
+            tools:text="Pengantin Laki-laki" />
+
+        <TextView
+            android:id="@+id/inv_tv_name_women"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sacramento"
+            android:gravity="center"
+            android:textColor="@color/colorGold"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/inv_guideline_05"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_iv_couple"
+            tools:text="Pengantin Laki-laki" />
+
+        <TextView
+            android:id="@+id/inv_tv_parent_man"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/lancelot"
+            android:gravity="center"
+            android:textColor="@color/colorGold"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/inv_guideline_05"
+            app:layout_constraintTop_toBottomOf="@id/inv_tv_name_man"
+            tools:text="Putra dari Bp. XXXX dan Ibu XXXX" />
+
+        <TextView
+            android:id="@+id/inv_tv_parent_women"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/lancelot"
+            android:gravity="center"
+            android:textColor="@color/colorGold"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@id/inv_guideline_05"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_tv_name_man"
+            tools:text="Putra dari Bp. XXXX dan Ibu XXXX" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/inv_barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="inv_tv_parent_women, inv_tv_parent_man" />
+
+        <ImageView
+            android:id="@+id/inv_iv3"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/img_line3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_barrier" />
+
+        <TextView
+            android:id="@+id/inv_tv_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lancelot"
+            android:text="Will be held at"
+            android:textColor="@color/colorGold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_iv3" />
+
+        <TextView
+            android:id="@+id/inv_tv_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/lancelot"
+            android:text="Akad Nikah"
+            android:textColor="@color/colorGold"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_tv_text3" />
+
+        <ImageView
+            android:id="@+id/inv_iv4"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:src="@drawable/img_line1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_tv_text4" />
+
+        <TextView
+            android:id="@+id/inv_tv_date_akad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lancelot"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_iv4"
+            tools:text="Selasa, 16 Februari 2021" />
+
+        <TextView
+            android:id="@+id/inv_tv_time_akad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_tv_date_akad"
+            tools:text="Pukul 09.00 WIB" />
+
+        <TextView
+            android:id="@+id/inv_tv_place_akad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_tv_time_akad"
+            tools:text="Hotel Po Semarang" />
+
+        <TextView
+            android:id="@+id/inv_tv_address_akad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_tv_place_akad"
+            tools:text="Hotel Po Semarang" />
+
+        <TextView
+            android:id="@+id/inv_tv_maps_akad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Maps"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_tv_address_akad" />
+
+        <!--Resepsi-->
+
+        <TextView
+            android:id="@+id/inv_tv_text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/lancelot"
+            android:text="Resepsi"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_tv_maps_akad" />
+
+        <ImageView
+            android:id="@+id/inv_iv5"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:src="@drawable/img_line1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_tv_text5" />
+
+        <TextView
+            android:id="@+id/inv_tv_date_resepsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_iv5"
+            tools:text="Selasa, 16 Februari 2021" />
+
+        <TextView
+            android:id="@+id/inv_tv_time_resepsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_tv_date_resepsi"
+            tools:text="Pukul 09.00 WIB" />
+
+        <TextView
+            android:id="@+id/inv_tv_place_resepsi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_tv_time_resepsi"
+            tools:text="Hotel Po Semarang" />
+
+        <TextView
+            android:id="@+id/inv_tv_address_resepsi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_tv_place_resepsi"
+            tools:text="Hotel Po Semarang" />
+
+        <TextView
+            android:id="@+id/inv_tv_maps_resepsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Maps"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_tv_address_resepsi" />
+
+        <ImageView
+            android:id="@+id/inv_iv6"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/img_line3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_tv_maps_resepsi" />
+
+        <TextView
+            android:id="@+id/inv_tv_text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Your QRCode"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_iv6" />
+
+        <ImageView
+            android:id="@+id/inv_iv_qrcode"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintDimensionRatio="3.5:4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_tv_text6"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <TextView
+            android:id="@+id/inv_tv_text7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="With Love"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_iv_qrcode" />
+
+        <TextView
+            android:id="@+id/inv_tv_brides"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:fontFamily="@font/sacramento"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inv_tv_text7"
+            tools:text="XXXX &amp; XXXX" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
